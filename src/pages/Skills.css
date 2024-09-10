@@ -1,0 +1,121 @@
+/* src/pages/Skills.css */
+
+.skills-container {
+    background: linear-gradient(to right, #000000, #003366);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .skills-title {
+    font-weight: bold;
+    color: #80b3ff; /* Blue color */
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .rotating-effect {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0.1;
+  }
+  
+  .skill-icon {
+    color: #4db6ac; /* Teal color for icons */
+    font-size: 40px;
+  }
+  
+  .skill-paper {
+    background: linear-gradient(to right, #1a1a1a, #333333);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  .skill-paper:hover {
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    box-shadow: 0 0 20px #80b3ff; /* Blue color */
+    transform: scale(1.05) rotate(2deg);
+    z-index: 1;
+    border: 1px solid #80b3ff; /* Blue color */
+  }
+  
+  .skill-paper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.1), transparent);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    z-index: 0;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+  .skill-paper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.1), transparent);
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 0;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+  .skill-category {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #80b3ff; /* Blue color */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .category-text {
+    margin-left: 1rem;
+  }
+  
+  .list-item {
+    padding: 0;
+  }
+  
+  .list-item-text {
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .list-item-text:hover {
+    color: #80b3ff; /* Blue color */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    transform: translateX(10px);
+  }
+  

@@ -1,0 +1,46 @@
+/* CSS for the AI-inspired cursor shadow effect */
+.cursor-wrapper {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.cursor-shadow {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Glowing effect */
+    transform: translate(-50%, -50%);
+    transition: width 0.1s ease, height 0.1s ease, box-shadow 0.1s ease; /* Faster transition */
+}
+
+.cursor-shadow:hover {
+    width: 30px; /* Increase size on hover */
+    height: 30px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1); /* Stronger glow */
+}
+
+.click-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.6) 0%, rgba(0, 255, 255, 0.6) 100%);
+    transform: scale(0);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 9999;
+    animation: click-animation 0.4s ease-out forwards; /* Faster click effect */
+}
+
+@keyframes click-animation {
+    to {
+        transform: scale(4); /* Larger scale for click effect */
+        opacity: 0;
+    }
+}

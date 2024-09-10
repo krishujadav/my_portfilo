@@ -1,0 +1,57 @@
+/* Header.css */
+
+.header-container {
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  .header-logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    border-radius: 50%;
+  }
+  
+  .menu-icon:hover {
+    background-color: #333;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+  
+  .menu-paper {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .menu-item {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-item:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  
+  .nav-button {
+    color: inherit;
+  }
+  
+  .nav-button:hover {
+    transform: scale(1.1);
+    rotate: 10deg;
+    color: #f0f0f0;
+  }
+  
+  .nav-button:active {
+    transform: scale(0.9);
+  }
+  
